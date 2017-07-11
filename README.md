@@ -23,7 +23,7 @@ npm install --save bee-calendar
 ```
 组件调用
 ```js
-import DatePicker from 'bee-calendar';
+import Calendar from 'bee-calendar';
 ReactDOM.render(
         <Calendar></Calendar>
         , document.getElementById('target'));
