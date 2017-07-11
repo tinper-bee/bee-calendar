@@ -31,13 +31,13 @@ ReactDOM.render(
 #### 样式引入
 - 可以使用link引入build目录下Calendar.css
 ```
-<link rel="stylesheet" href="./node_modules/bee-datepicker/build/Calendar.css">
+<link rel="stylesheet" href="./node_modules/bee-calendar/build/Calendar.css">
 ```
 - 可以在js中import样式
 ```js
-import "./node_modules/bee-button/src/Calendar.scss"
+import "./node_modules/bee-calendar/src/Calendar.scss"
 //或是
-import "./node_modules/bee-button/build/Calendar.css"
+import "./node_modules/bee-calendar/build/Calendar.css"
 ```
 
 
