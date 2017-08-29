@@ -6,6 +6,8 @@
  *
  */
 
+import React, { Component } from 'react';
+import Calendar from '../../src';
 
 
 function onSelect(value) {
@@ -26,3 +28,6 @@ class Demo1 extends Component {
         )
     }
 }
+
+
+export  default Demo1
