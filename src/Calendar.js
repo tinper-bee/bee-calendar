@@ -1,14 +1,13 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 import FullCalendar from 'rc-calendar/lib/FullCalendar';
-const propTypes = {};
-const defaultProps = {};
-
+import PropTypes from 'prop-types';
 import Select from 'rc-select';
-
 import zhCN from 'rc-calendar/lib/locale/zh_CN';
 import enUS from 'rc-calendar/lib/locale/en_US';
-
 import moment from 'moment';
+
+const propTypes = {};
+const defaultProps = {};
 
 const format = 'YYYY-MM-DD';
 const cn = location.search.indexOf('cn') !== -1;
@@ -52,4 +51,5 @@ class Calendar extends Component {
 };
 Calendar.propTypes = propTypes;
 Calendar.defaultProps = defaultProps;
+
 export default Calendar;

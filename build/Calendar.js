@@ -14,6 +14,10 @@ var _FullCalendar = require('rc-calendar/lib/FullCalendar');
 
 var _FullCalendar2 = _interopRequireDefault(_FullCalendar);
 
+var _propTypes = require('prop-types');
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 var _rcSelect = require('rc-select');
 
 var _rcSelect2 = _interopRequireDefault(_rcSelect);
@@ -90,5 +94,6 @@ var Calendar = function (_Component) {
 ;
 Calendar.propTypes = propTypes;
 Calendar.defaultProps = defaultProps;
+
 exports["default"] = Calendar;
 module.exports = exports['default'];
