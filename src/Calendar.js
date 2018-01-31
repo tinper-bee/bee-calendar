@@ -41,6 +41,7 @@ class Calendar extends Component {
     render() {
         return (
             <FullCalendar
+                prefixCls = "u-calendar"
                 Select={Select}
                 defaultValue={now}
                 locale={cn ? zhCN : enUS}

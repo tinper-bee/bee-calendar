@@ -11,7 +11,7 @@ import Calendar from '../../src/index';
 
 
 function onSelect(value) {
-    console.log('select', value.format(format));
+    console.log(value);
 }
 
 

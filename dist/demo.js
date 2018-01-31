@@ -76,7 +76,7 @@
 	
 	var CARETUP = _react2['default'].createElement('i', { className: 'uf uf-arrow-up' });
 	
-	var Demo1 = __webpack_require__(64);var Demo2 = __webpack_require__(337);var DemoArray = [{ "example": _react2['default'].createElement(Demo1, null), "title": " 卡片模式", "code": "\n/**\n *\n * @title 卡片模式\n * @description 用于嵌套在空间有限的容器中\n *\n */\n\nimport React, { Component } from 'react';\nimport Calendar from \"tinper-bee/lib/Calendar\";\n\n\nfunction onSelect(value) {\n    console.log('select', value.format(format));\n}\n\n\nclass Demo1 extends Component {\n    render() {\n        return (\n            <div>\n               <Calendar\n                   style={{ margin: 10 }}\n                   fullscreen={false}\n                   onSelect={onSelect}\n               />\n            </div>\n        )\n    }\n}\n\n\n", "desc": " 用于嵌套在空间有限的容器中" }, { "example": _react2['default'].createElement(Demo2, null), "title": " 选择日历", "code": "\n/**\n *\n * @title 选择日历\n * @description 一个通用的日历面板，支持年/月切换。\n *\n */\n\nimport React, { Component } from 'react';\nimport Calendar from \"tinper-bee/lib/Calendar\";\n\n\nfunction onSelect(value) {\n    console.log('select', value.format(format));\n}\n\nclass Demo2 extends Component {\n\n    constructor(props, context) {\n        super(props, context);\n\n        this.state =  {\n            type:'month',\n        }\n    }\n\n    onTypeChange(type) {\n        this.setState({\n            type,\n        });\n    }\n\n    render() {\n        return (\n            <div>\n               <Calendar\n                   style={{ margin: 10 }}\n                   fullscreen\n\n                   onSelect={onSelect}\n                   type={this.state.type}\n                   onTypeChange={this.onTypeChange.bind(this)}\n\n               />\n            </div>\n        )\n    }\n}\n\n", "desc": " 一个通用的日历面板，支持年/月切换。" }];
+	var Demo1 = __webpack_require__(64);var Demo2 = __webpack_require__(337);var DemoArray = [{ "example": _react2['default'].createElement(Demo1, null), "title": " 卡片模式", "code": "\n/**\n *\n * @title 卡片模式\n * @description 用于嵌套在空间有限的容器中\n *\n */\n\nimport React, { Component } from 'react';\nimport Calendar from \"tinper-bee/lib/index\";;\n\n\nfunction onSelect(value) {\n    console.log(value);\n}\n\n\nclass Demo1 extends Component {\n    render() {\n        return (\n            <div>\n               <Calendar\n                   style={{ margin: 10 }}\n                   fullscreen={false}\n                   onSelect={onSelect}\n               />\n            </div>\n        )\n    }\n}\n\n\n", "desc": " 用于嵌套在空间有限的容器中" }, { "example": _react2['default'].createElement(Demo2, null), "title": " 选择日历", "code": "\n/**\n *\n * @title 选择日历\n * @description 一个通用的日历面板，支持年/月切换。\n *\n */\n\nimport React, { Component } from 'react';\nimport Calendar from \"tinper-bee/lib/index\";;\n\n\nfunction onSelect(value) {\n    console.log(value);\n}\n\nclass Demo2 extends Component {\n\n    constructor(props, context) {\n        super(props, context);\n\n        this.state =  {\n            type:'month',\n        }\n    }\n\n    onTypeChange(type) {\n        this.setState({\n            type,\n        });\n    }\n\n    render() {\n        return (\n            <div>\n               <Calendar\n                   style={{ margin: 10 }}\n                   fullscreen\n\n                   onSelect={onSelect}\n                   type={this.state.type}\n                   onTypeChange={this.onTypeChange.bind(this)}\n\n               />\n            </div>\n        )\n    }\n}\n\n", "desc": " 一个通用的日历面板，支持年/月切换。" }];
 	
 	var Demo = function (_Component) {
 	    _inherits(Demo, _Component);
@@ -6231,7 +6231,7 @@
 	 */
 	
 	function onSelect(value) {
-	    console.log('select', value.format(format));
+	    console.log(value);
 	}
 	
 	var Demo1 = function (_Component) {
@@ -6368,6 +6368,7 @@
 	
 	    Calendar.prototype.render = function render() {
 	        return _react2['default'].createElement(_FullCalendar2['default'], _extends({
+	            prefixCls: 'u-calendar',
 	            Select: _rcSelect2['default'],
 	            defaultValue: now,
 	            locale: cn ? _zh_CN2['default'] : _en_US2['default']
@@ -7450,6 +7451,27 @@
 	     */
 	    componentWillUnmount: 'DEFINE_MANY',
 	
+	    /**
+	     * Replacement for (deprecated) `componentWillMount`.
+	     *
+	     * @optional
+	     */
+	    UNSAFE_componentWillMount: 'DEFINE_MANY',
+	
+	    /**
+	     * Replacement for (deprecated) `componentWillReceiveProps`.
+	     *
+	     * @optional
+	     */
+	    UNSAFE_componentWillReceiveProps: 'DEFINE_MANY',
+	
+	    /**
+	     * Replacement for (deprecated) `componentWillUpdate`.
+	     *
+	     * @optional
+	     */
+	    UNSAFE_componentWillUpdate: 'DEFINE_MANY',
+	
 	    // ==== Advanced methods ====
 	
 	    /**
@@ -7463,6 +7485,23 @@
 	     * @overridable
 	     */
 	    updateComponent: 'OVERRIDE_BASE'
+	  };
+	
+	  /**
+	   * Similar to ReactClassInterface but for static methods.
+	   */
+	  var ReactClassStaticInterface = {
+	    /**
+	     * This method is invoked after a component is instantiated and when it
+	     * receives new props. Return an object to update state in response to
+	     * prop changes. Return null to indicate no change to state.
+	     *
+	     * If an object is returned, its keys will be merged into the existing state.
+	     *
+	     * @return {object || null}
+	     * @optional
+	     */
+	    getDerivedStateFromProps: 'DEFINE_MANY_MERGED'
 	  };
 	
 	  /**
@@ -7699,6 +7738,7 @@
 	    if (!statics) {
 	      return;
 	    }
+	
 	    for (var name in statics) {
 	      var property = statics[name];
 	      if (!statics.hasOwnProperty(name)) {
@@ -7715,14 +7755,25 @@
 	        name
 	      );
 	
-	      var isInherited = name in Constructor;
-	      _invariant(
-	        !isInherited,
-	        'ReactClass: You are attempting to define ' +
-	          '`%s` on your component more than once. This conflict may be ' +
-	          'due to a mixin.',
-	        name
-	      );
+	      var isAlreadyDefined = name in Constructor;
+	      if (isAlreadyDefined) {
+	        var specPolicy = ReactClassStaticInterface.hasOwnProperty(name)
+	          ? ReactClassStaticInterface[name]
+	          : null;
+	
+	        _invariant(
+	          specPolicy === 'DEFINE_MANY_MERGED',
+	          'ReactClass: You are attempting to define ' +
+	            '`%s` on your component more than once. This conflict may be ' +
+	            'due to a mixin.',
+	          name
+	        );
+	
+	        Constructor[name] = createMergedResultFunction(Constructor[name], property);
+	
+	        return;
+	      }
+	
 	      Constructor[name] = property;
 	    }
 	  }
@@ -8030,6 +8081,12 @@
 	        !Constructor.prototype.componentWillRecieveProps,
 	        '%s has a method called ' +
 	          'componentWillRecieveProps(). Did you mean componentWillReceiveProps()?',
+	        spec.displayName || 'A component'
+	      );
+	      warning(
+	        !Constructor.prototype.UNSAFE_componentWillRecieveProps,
+	        '%s has a method called UNSAFE_componentWillRecieveProps(). ' +
+	          'Did you mean UNSAFE_componentWillReceiveProps()?',
 	        spec.displayName || 'A component'
 	      );
 	    }
@@ -34675,7 +34732,7 @@
 	 */
 	
 	function onSelect(value) {
-	    console.log('select', value.format(format));
+	    console.log(value);
 	}
 	
 	var Demo2 = function (_Component) {
