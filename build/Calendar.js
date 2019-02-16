@@ -82,6 +82,7 @@ var Calendar = function (_Component) {
 
     Calendar.prototype.render = function render() {
         return _react2["default"].createElement(_FullCalendar2["default"], _extends({
+            prefixCls: 'u-calendar',
             Select: _rcSelect2["default"],
             defaultValue: now,
             locale: cn ? _zh_CN2["default"] : _en_US2["default"]
