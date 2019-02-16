@@ -477,7 +477,7 @@
   text-align: center;
 }
 .u-calendar-date:hover {
-  background: unquote("rgb(#{$primary-color,0.1})");
+  background: $hover-bg-color-base;
   cursor: pointer;
 }
 .u-calendar-selected-day .u-calendar-date {
@@ -758,7 +758,7 @@
     line-height: 36px;
     text-align: center;
     &:hover{
-      background: unquote("rgb(#{$primary-color,0.1})");
+      background: $hover-bg-color-base;
       cursor: pointer;
     }
   }
@@ -1211,7 +1211,7 @@
   }
   .u-calendar-selected-day .u-calendar-date,
   .u-calendar-month-panel-selected-cell .u-calendar-month-panel-month {
-    background-color: unquote("rgb(#{$primary-color,0.1})");
+    background-color: $hover-bg-color-base;
     color: #666;
   }
   .u-calendar-today .u-calendar-date,
@@ -1589,14 +1589,14 @@ li.rc-select-dropdown-menu-item-disabled {
   color: #ccc;
   cursor: not-allowed;
 }
+li.rc-select-dropdown-menu-item-active {
+  background-color: $hover-bg-color-base;
+  cursor: pointer;
+}
 li.rc-select-dropdown-menu-item-selected {
+  font-weight: 600;
   color: #666;
   background-color: #ddd;
-}
-li.rc-select-dropdown-menu-item-active {
-  background-color: $brand-primary;
-  color: white;
-  cursor: pointer;
 }
 li.rc-select-dropdown-menu-item-divider {
   height: 1px;
