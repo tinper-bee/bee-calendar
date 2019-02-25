@@ -426,7 +426,8 @@
   text-align: center; }
 
 .u-calendar-date:hover {
-  background: rgb(227,242,253);
+  background: rgb(243,243,243);
+  color: rgb(30,136,229);
   cursor: pointer; }
 
 .u-calendar-selected-day .u-calendar-date {
@@ -707,7 +708,8 @@
     line-height: 36px;
     text-align: center; }
     .u-calendar-month-panel-cell .u-calendar-month-panel-month:hover {
-      background: rgb(227,242,253);
+      background: rgb(243,243,243);
+      color: rgb(30,136,229);
       cursor: pointer; }
 
 .u-calendar-month-panel-cell-disabled .u-calendar-month-panel-month {
@@ -1069,7 +1071,7 @@
     padding-right: 8px; }
   .u-calendar-fullscreen .u-calendar-selected-day .u-calendar-date,
   .u-calendar-fullscreen .u-calendar-month-panel-selected-cell .u-calendar-month-panel-month {
-    background-color: rgb(227,242,253);
+    background-color: rgb(243,243,243);
     color: #666; }
   .u-calendar-fullscreen .u-calendar-today .u-calendar-date,
   .u-calendar-fullscreen .u-calendar-month-panel-selected-cell .u-calendar-month-panel-month {
@@ -1389,7 +1391,8 @@ li.rc-select-dropdown-menu-item-disabled {
   cursor: not-allowed; }
 
 li.rc-select-dropdown-menu-item-active {
-  background-color: rgb(227,242,253);
+  background-color: rgb(243,243,243);
+  color: rgb(30,136,229);
   cursor: pointer; }
 
 li.rc-select-dropdown-menu-item-selected {

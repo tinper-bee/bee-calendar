@@ -478,6 +478,7 @@
 }
 .u-calendar-date:hover {
   background: $hover-bg-color-base;
+  color: $brand-primary;
   cursor: pointer;
 }
 .u-calendar-selected-day .u-calendar-date {
@@ -759,6 +760,7 @@
     text-align: center;
     &:hover{
       background: $hover-bg-color-base;
+      color: $brand-primary;
       cursor: pointer;
     }
   }
@@ -1591,6 +1593,7 @@ li.rc-select-dropdown-menu-item-disabled {
 }
 li.rc-select-dropdown-menu-item-active {
   background-color: $hover-bg-color-base;
+  color: $brand-primary;
   cursor: pointer;
 }
 li.rc-select-dropdown-menu-item-selected {
