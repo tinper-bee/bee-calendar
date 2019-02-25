@@ -1,5 +1,10 @@
+<a name="2.0.1"></a>
+## [2.0.1](https://github.com/tinper-bee/bee-calendar/compare/v2.0.0...v2.0.1) (2019-02-25)
+
+
+
 <a name="2.0.0"></a>
-# 2.0.0 (2019-02-16)
+# [2.0.0](https://github.com/tinper-bee/bee-calendar/compare/5256dc3...v2.0.0) (2019-02-16)
 
 
 ### Bug Fixes
