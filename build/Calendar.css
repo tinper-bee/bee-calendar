@@ -1028,8 +1028,8 @@
     .u-calendar-full-header .u-calendar-full-header-switcher > span {
       float: left;
       height: 28px;
-      line-height: 24px;
-      border: 1px solid #d9d9d9;
+      line-height: 28px;
+      border: 1px solid rgb(165, 173, 186);
       padding: 0 10px;
       color: #666; }
     .u-calendar-full-header .u-calendar-full-header-switcher > span:first-child {
@@ -1123,7 +1123,7 @@
     display: block;
     background-color: #fff;
     border-radius: 3px;
-    border: 1px solid #d9d9d9; }
+    border: 1px solid rgb(165, 173, 186); }
   .rc-select .rc-select-selection__placeholder {
     position: absolute;
     top: 0;

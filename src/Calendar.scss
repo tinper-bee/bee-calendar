@@ -1159,8 +1159,8 @@
     &>span{
       float: left;
       height: 28px;
-      line-height: 24px;
-      border: 1px solid #d9d9d9;
+      line-height: 28px;
+      border: 1px solid $border-color-base;
       padding: 0 10px;
       color: #666;
     }
@@ -1275,7 +1275,7 @@
     display: block;
     background-color: #fff;
     border-radius: $border-radius-base;
-    border: 1px solid #d9d9d9;
+    border: 1px solid $border-color-base;
   }
   .rc-select-selection__placeholder {
     position: absolute;
