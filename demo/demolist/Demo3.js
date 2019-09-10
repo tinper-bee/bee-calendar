@@ -10,7 +10,7 @@ import React, { Component } from 'react';
 import Calendar from '../../src/index';
 import zhCN from 'rc-calendar/lib/locale/zh_CN';
 
-//设置moment语言
+// 1、设置moment语言
 // import moment from 'moment'
 // moment.locale('zh-cn')
 
@@ -43,7 +43,7 @@ class Demo2 extends Component {
                    onSelect={onSelect}
                    type={this.state.type}
                    onTypeChange={this.onTypeChange.bind(this)}
-                   locale={zhCN}
+                   locale={zhCN} // 2、设置 locale语言包
                />
             </div>
         )
