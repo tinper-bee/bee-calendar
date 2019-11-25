@@ -38,7 +38,7 @@ class Calendar extends Component {
     // }
 
     onChange(value){
-        this.props.onChange(value)
+        this.props.onChange && this.props.onChange(value)
     }
        
     render() {

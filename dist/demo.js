@@ -37157,7 +37157,7 @@
 	    // }
 	
 	    Calendar.prototype.onChange = function onChange(value) {
-	        this.props.onChange(value);
+	        this.props.onChange && this.props.onChange(value);
 	    };
 	
 	    Calendar.prototype.render = function render() {
